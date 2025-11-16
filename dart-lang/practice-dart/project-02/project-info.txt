@@ -1,0 +1,61 @@
+# Shopping Insights with Dart & Flutter
+
+## Project Goal
+Parse a shopping list CSV file in Dart, then compute and display useful insights in a CLI app or a Flutter UI.
+
+## Tech Stack
+- **Dart (console app)** – For parsing CSV and computing statistics
+- **Flutter (optional)** – To display data in a ListView/DataTable with summary cards
+- **shopping_list.csv** – Sample data file containing shopping items
+
+## Project Structure
+```
+project-02/
+├── data_analysis/
+│   ├── shopping_list.csv    # Sample shopping data
+│   └── total.dart          # Main Dart file for data processing
+└── project-info.txt        # This file
+```
+
+## Implementation Tasks
+
+### 1. Data Model
+Create a `ShoppingItem` class with the following fields:
+- `id` (int/string)
+- `name` (string)
+- `category` (string)
+- `quantity` (int)
+- `unitPrice` (double)
+
+### 2. CSV Parsing
+- Load and parse `shopping_list.csv`
+- Skip the header row
+- Convert each row into a `ShoppingItem` object
+- Handle potential errors (missing/incorrect data types)
+
+### 3. Data Analysis
+Implement functions to calculate:
+- Total number of unique items
+- Total quantity of all items
+- Total cost (sum of quantity × unitPrice for all items)
+- (Optional) Category-wise summary
+
+### 4. Output
+- Display results in a clean, readable format
+- (Optional) Format currency values
+- (Optional) Sort items by category/price
+
+## Sample Data Format
+```csv
+id,item_name,category,quantity,unit_price
+1,Rice (5kg),Groceries,2,320.00
+2,Wheat Flour (1kg),Groceries,5,45.00
+...
+```
+
+## Next Steps
+1. Implement the ShoppingItem class
+2. Write CSV parsing logic
+3. Implement analysis functions
+4. Display results
+5. (Optional) Add Flutter UI

@@ -1,0 +1,24 @@
+Rock, Paper or Scissors ? (r/p/s)
+
+
+It should read the user input and use it as follows:
+
+- If the user enters "r", "p", or "s", it should print "You chose rock", "You chose paper", or "You chose scissors" respectively. Choose as valid move.
+- If the user enters anything else, it should print "Invalid move".
+- If the user enters "q", it should print "Goodbye" and exit the program.
+
+After the user makes a choice, the program should generate a random choice, then compare the choices according to the rules of the game (rock beats scissors, scissors beat paper, paper beats rock) and print the result.
+
+The program should continue running until the user enters "q".
+
+For example: If the user enters "r", the program should print "You chose rock" and then print "Computer chose paper" and then print "You lose".
+
+> You chose rock
+> Computer chose paper
+> You lose
+
+The program should continue running until the user enters "q".
+
+> Rock, Paper or Scissors ? (r/p/s)
+> q
+> Goodbye

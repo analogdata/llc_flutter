@@ -1,0 +1,26 @@
+id,item_name,category,quantity,unit_price
+1,Rice (5kg),Groceries,2,320.00
+2,Wheat Flour (1kg),Groceries,5,45.00
+3,Sugar (1kg),Groceries,3,42.50
+4,Milk (1L),Dairy,10,52.00
+5,Curd (500g),Dairy,4,35.00
+6,Almonds (500g),Dry Fruits,2,325.00
+7,Walnuts (250g),Dry Fruits,2,280.00
+8,Olive Oil (1L),Groceries,1,650.00
+9,Sunflower Oil (1L),Groceries,3,155.00
+10,Toor Dal (1kg),Groceries,4,165.00
+11,Soap Bar,Personal Care,8,32.00
+12,Shampoo (200ml),Personal Care,3,145.00
+13,Toothpaste,Personal Care,4,89.00
+14,Laundry Detergent (1kg),Household,2,210.00
+15,Dishwash Liquid (500ml),Household,3,75.00
+16,Floor Cleaner (1L),Household,2,185.00
+17,Tissue Roll (pack of 6),Household,2,120.00
+18,Eggs (dozen),Groceries,3,78.00
+19,Bread (400g),Bakery,5,35.00
+20,Biscuits (pack),Snacks,6,25.00
+21,Potato (1kg),Vegetables,4,30.00
+22,Tomato (1kg),Vegetables,4,40.00
+23,Onion (1kg),Vegetables,3,32.00
+24,Apples (1kg),Fruits,2,160.00
+25,Bananas (dozen),Fruits,3,60.00
