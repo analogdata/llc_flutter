@@ -1,0 +1,42 @@
+# Project Info: Dart E-commerce Console Application
+
+## Overview
+A command-line based e-commerce application that demonstrates core Dart programming concepts including:
+- Object-oriented programming
+- State management
+- Console I/O operations
+- Error handling
+- Data modeling
+
+## Features
+- Product catalog management
+- Shopping cart functionality
+- Checkout system with payment processing
+- Interactive console interface
+
+## Key Components
+- Product: Represents items for sale
+- Item: Product + quantity in cart
+- Cart: Manages shopping cart operations
+- Checkout: Handles payment processing
+
+## How to Run
+1. Ensure Dart SDK is installed
+2. Navigate to project directory
+3. Run: `dart run bin/ecommerce.dart`
+
+## Usage
+- 'v': View cart
+- 'a': Add item
+- 'c': Checkout
+
+## Technical Stack
+- Dart SDK
+- dart:io for console operations
+
+## Learning Outcomes
+- Dart language fundamentals
+- Console application development
+- State management
+- Input validation
+- Clean code practices
