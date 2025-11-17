@@ -1,11 +1,4 @@
 class Employee {
-  String firstName;
-  String lastName;
-  int age;
-  double salary;
-  bool isManager;
-  bool director;
-
   Employee({
     required this.firstName,
     required this.lastName,
@@ -23,6 +16,13 @@ class Employee {
     this.isManager = true,
     this.director = true,
   });
+
+  String firstName;
+  String lastName;
+  int age;
+  double salary;
+  bool isManager;
+  bool director;
 
   void increaseSalary(double by) {
     salary += by;
