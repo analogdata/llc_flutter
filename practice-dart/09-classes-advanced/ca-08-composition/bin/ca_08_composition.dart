@@ -27,9 +27,9 @@ class Button extends Widget {
   // Constructor with named parameters:
   // - child: what shows inside the button (required)
   // - onPressed: what happens when button is clicked (optional)
-  Button({required this.child, this.onPressed});
+  Button({required this.xyz, this.onPressed});
   
-  final Widget child;   // Composition: Button HAS-A Widget (child)
+  final Widget xyz;   // Composition: Button HAS-A Widget (child)
   final void Function()? onPressed;  // The action when button is pressed (can be null)
 }
 

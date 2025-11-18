@@ -10,6 +10,12 @@ class Animal {
 class Lion extends Animal {
   Lion({required super.age});
   void hunt() => print("Hunt");
+
+  @override
+  void sleep() {
+    super.sleep();
+    print("Sleeping like a lion");
+  }
 }
 
 class Dog extends Animal {
@@ -45,6 +51,6 @@ void main() {
 
   final simba = Lion(age: 3);
   simba.sleep();
-  simba.hunt();
+  simba.sleep();
   print(simba.age);
 }
