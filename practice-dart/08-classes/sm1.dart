@@ -3,7 +3,7 @@ class Employee {
     required this.firstName,
     required this.lastName,
     required this.age,
-    required this.salary,
+    // required this._salary
     this.isManager = false,
     this.director = false,
   });
@@ -12,7 +12,7 @@ class Employee {
     required this.firstName,
     required this.lastName,
     required this.age,
-    required this.salary,
+    // required this._salary,
     this.isManager = true,
     this.director = true,
   });
@@ -20,12 +20,18 @@ class Employee {
   String firstName;
   String lastName;
   int age;
-  double salary;
+  double _salary = 0;
   bool isManager;
   bool director;
 
+  double get salary => _salary;
+
+  set salary(double value) {
+    _salary = value;
+  }
+
   void increaseSalary(double by) {
-    salary += by;
+    _salary += by;
   }
 
   void fullName() {
@@ -45,15 +51,11 @@ void main() {
     firstName: "Rajath",
     lastName: "Kumar",
     age: 21,
-    salary: 10000,
   );
 
-  Employee tony = Employee(
-    firstName: "Tony",
-    lastName: "Stark",
-    age: 40,
-    salary: 20000,
-  );
+  rajath.salary = 10000;
+
+  Employee tony = Employee(firstName: "Tony", lastName: "Stark", age: 40);
 
   rajath.increaseSalary(1000);
   tony.increaseSalary(2000);
