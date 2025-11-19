@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:developer';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class _ContactState extends State<Contact> {
   final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    log("Screen is Rebuilding");
     return Scaffold(
       appBar: AppBar(
         title: const Text('Contact Page'),
@@ -45,6 +47,7 @@ class _ContactState extends State<Contact> {
                 setState(() {
                   name = _nameController.text;
                 });
+                log("Set State is Called");
               },
               child: const Text('Change Name'),
             ),
