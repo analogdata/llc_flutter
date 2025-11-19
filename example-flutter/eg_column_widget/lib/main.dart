@@ -28,6 +28,8 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Icon(Icons.favorite, size: 50, color: Colors.red),
+            SizedBox(height: 20),
             Text(
               'Hello World',
               style: GoogleFonts.openSans(
