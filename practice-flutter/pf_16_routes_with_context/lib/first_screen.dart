@@ -61,12 +61,17 @@ class _MyFirstScreenState extends State<MyFirstScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) =>
+                //         MySecondScreen(name: nameController.text),
+                //   ),
+                // );
+                Navigator.pushNamed(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        MySecondScreen(name: nameController.text),
-                  ),
+                  MySecondScreen.routeName,
+                  arguments: nameController.text,
                 );
               },
               style: ElevatedButton.styleFrom(
