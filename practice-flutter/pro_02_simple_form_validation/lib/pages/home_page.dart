@@ -25,9 +25,7 @@ class _HomePageState extends State<HomePage> {
 
   void _validateForm() {
     if (_formdata.currentState!.validate()) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('Form Submitted Successfully')));
+      ScaffoldMessenger.of(context);
     }
   }
 
@@ -144,6 +142,7 @@ class _HomePageState extends State<HomePage> {
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () => _validateForm(),
+                        // onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Theme.of(
                             context,
@@ -165,6 +164,17 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ],
+                ),
+                SizedBox(height: 16),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Forgot Password?',
+                    style: GoogleFonts.outfit(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 ),
               ],
             ),
