@@ -13,7 +13,7 @@ class ResponsiveLayout extends StatelessWidget {
     return MaterialApp(
       title: 'Responsive Layout',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.teal),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.red),
       home: HomeScreenLayout(),
     );
   }

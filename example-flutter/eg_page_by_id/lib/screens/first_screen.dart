@@ -11,6 +11,9 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  String name = '';
+  final TextEditingController _nameController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +22,27 @@ class _FirstScreenState extends State<FirstScreen> {
         child: Column(
           children: [
             Text('First Screen'),
+            TextField(
+              controller: _nameController,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Name',
+                hintText: 'Enter your name',
+              ),
+              onChanged: (value) {
+                setState(() {
+                  name = value;
+                });
+              },
+            ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, SecondScreen.id);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SecondScreen(name: name),
+                  ),
+                );
               },
               child: Text('Go to Second Screen'),
             ),

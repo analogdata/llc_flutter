@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
       initialRoute: MyFirstScreen.routeName,
       routes: {
         MyFirstScreen.routeName: (context) => const MyFirstScreen(),
-        MySecondScreen.routeName: (context) => const MySecondScreen(name: ""),
+        MySecondScreen.routeName: (context) {
+          final args = ModalRoute.of(context)?.settings.arguments as String?;
+          return MySecondScreen(name: args ?? "");
+        },
       },
     );
   }

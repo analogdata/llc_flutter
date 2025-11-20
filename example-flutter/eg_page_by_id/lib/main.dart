@@ -16,7 +16,7 @@ class PagesApp extends StatelessWidget {
       initialRoute: FirstScreen.id,
       routes: {
         FirstScreen.id: (context) => FirstScreen(),
-        SecondScreen.id: (context) => SecondScreen(),
+        SecondScreen.id: (context) => SecondScreen(name: ''),
       },
     );
   }
