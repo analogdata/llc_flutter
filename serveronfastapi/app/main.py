@@ -39,3 +39,14 @@ def multiply(input: Request):
         "result": input.a * input.b
     }
     return data
+
+
+class Username(BaseModel):
+    email: str
+    password: str
+
+
+@app.post("/login")
+def username(input: Username):
+    if input.email == "rajath@gmail.com" and input.password == "123456":
+        return {"username": "rajathkumar", "token": "123456abcdef"}
