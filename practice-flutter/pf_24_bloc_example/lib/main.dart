@@ -1,25 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'business_logic/counter_bloc.dart';
+
 // Entry point of the app. We keep it very small and delegate UI to MyApp.
 void main() {
   runApp(const MyApp());
-}
-
-// Simple Bloc event: we only support incrementing the counter.
-abstract class CounterEvent {}
-
-class CounterIncrementPressed extends CounterEvent {}
-
-// Bloc: takes CounterEvent as input and exposes an int as state.
-class CounterBloc extends Bloc<CounterEvent, int> {
-  CounterBloc() : super(0) {
-    // on<CounterEvent> tells Bloc how to react to each event type.
-    on<CounterIncrementPressed>((event, emit) {
-      // emit() sends a new state to all listeners.
-      emit(state + 1);
-    });
-  }
 }
 
 // Root widget for the app.
