@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012836256940",
+    "project_id": "auth-demo-b12fa",
+    "storage_bucket": "auth-demo-b12fa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012836256940:android:0b22b861b3987f7b972309",
+        "android_client_info": {
+          "package_name": "com.example.pf_30_auth_with_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOBkTpwlGI9YmaZ4EblVNDFNVkflAn4CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012836256940:android:1a3e5dd55c12d0fd972309",
+        "android_client_info": {
+          "package_name": "com.example.pf_31_firebase_cloud_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOBkTpwlGI9YmaZ4EblVNDFNVkflAn4CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
